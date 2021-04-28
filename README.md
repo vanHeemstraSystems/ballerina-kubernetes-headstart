@@ -179,6 +179,11 @@ Compiling source
         
 ```
 
+***Note***: In case the following error occurred, ```error: compilation failed: error: could not connect to remote repository to find versions for: ballerina/io. reason: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed```, do the following
+
+more...
+
+
 ## 500 - Modifying a Ballerina Module
 
 More ....
