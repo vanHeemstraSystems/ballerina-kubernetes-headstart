@@ -182,14 +182,11 @@ $ bal build helloWorldService
 Compiling source
         cloud_user/helloWorldService:0.1.0
         
-        [ERRORS] optional
-        
+Generating executable
+        helloWorldService/target/bin/helloWorldService.jar
 ```
 
-***Note***: In case the following error occurred, ```error: compilation failed: error: could not connect to remote repository to find versions for: ballerina/io. reason: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed```, do the following
-
-more...
-
+***Note***: In case the following error occurred, ```error: compilation failed: error: could not connect to remote repository to find versions for: ballerina/io. reason: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed```, add a ***Ballerina Central access token*** to your Ballerina settings as mentioned at the start of this document.
 
 ## 500 - Modifying a Ballerina Module
 
