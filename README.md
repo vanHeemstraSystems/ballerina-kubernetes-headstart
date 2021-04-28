@@ -218,3 +218,4 @@ service<http:Service> helloWorld bind helloWorldEP {
 ```
 hello_world.bal
 
+***Note***: ```${ballerina.home}```: Since periods are not allowed in environment variables, periods in config keys are replaced with underscores when looking up environment variables (e.g. $BALLERINA_HOME).
