@@ -121,7 +121,18 @@ $ ls -la
 helloWorld.bal
 ```
 
-In sum, the Ballerina Package/Project directory structure is now as follows:
+The content of helloWorld.bal is as follows:
+
+```
+$ vi helloWorld.bal
+import ballerina/io;
+
+public function hello() {
+    io:println("Hello World!");
+}
+```
+
+In sum, the Ballerina Package/Project directory structure is now as follows (sorting order may differ):
 
 ```
  helloWorldService
@@ -152,6 +163,25 @@ Check if the environment variable is set:
 $ echo $BALLERINA_HOME
 /usr/lib64/ballerina
 ```
+
+## 400 - Building a Ballerina Package/Project (icluding the modules)
+
+Starting outside the Ballerina Package/Project directory
+
+```
+$ ls -la  
+helloWorldService
+$ bal build helloWorldService
+Compiling source
+        cloud_user/helloWorldService:0.1.0
+        
+        [ERRORS] optional
+        
+```
+
+## 500 - Modifying a Ballerina Module
+
+More ....
 
 Below sample service will return "Hello World ! " for request. 
 
