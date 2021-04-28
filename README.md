@@ -164,7 +164,7 @@ $ echo $BALLERINA_HOME
 /usr/lib64/ballerina
 ```
 
-## 400 - Building a Ballerina Package/Project (icluding the modules)
+## 400 - Building a Ballerina Package/Project (including the modules)
 
 Starting outside the Ballerina Package/Project directory
 
