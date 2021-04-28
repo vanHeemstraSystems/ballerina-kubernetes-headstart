@@ -215,6 +215,20 @@ create a bug report with both this log file and the sample code.
 We thank you for helping make us better dancers.
 ```
 
+If the above happens, check the content of the generated log file:
+
+```
+$ cd helloWorldService
+$ ls -la
+...
+ballerina-internal.log
+...
+$ vi ballerine-internal.log
+```
+
+
+
+
 ## 500 - Modifying a Ballerina Module
 
 More ....
