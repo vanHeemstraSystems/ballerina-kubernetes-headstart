@@ -17,6 +17,13 @@ Let’s write simple ballerina service.
 
 ***Tip***: You can try out Ballerina code online at https://play.ballerina.io/
 
+After having installed Ballerina (see https://github.com/vanHeemstraSystems/ballerina-headstart), make sure to add an ***Ballerina Central access token*** to your Ballerina settings as follows:
+
+1) Open https://central.ballerina.io/dashboard
+2) Look at the window with the title ***Your Ballerina Token***.
+3) Copy the text from above window, e.g.: ```[central] accesstoken="---SOME TOKEN HERE---"```
+4) Paste the above text in ```<USER_HOME>/.ballerina/Settings.toml``` file.
+
 Create a new ***Ballerina package/project***, including a library package, as follows (or clone the repository with the pre-made directory structure and files).
 
 ```
