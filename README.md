@@ -24,6 +24,14 @@ After having installed Ballerina (see https://github.com/vanHeemstraSystems/ball
 3) Copy the text from above window, e.g.: ```[central] accesstoken="---SOME TOKEN HERE---"```
 4) Paste the above text in ```<USER_HOME>/.ballerina/Settings.toml``` file.
 
+Check if you can now ***pull Ballerina modules*** from Ballerina Central as follows (e.g. ballerina/ftp):
+
+```
+$ bal pull ballerina/ftp
+ballerina/ftp:1.1.0-alpha9 [central.ballerina.io -> home repo]  100% [==========] 1671/1671 KB (0:00:
+ballerina/ftp:1.1.0-alpha9 pulled from central successfully
+```
+
 Create a new ***Ballerina package/project***, including a library package, as follows (or clone the repository with the pre-made directory structure and files).
 
 ```
@@ -187,6 +195,14 @@ Generating executable
 ```
 
 ***Note***: In case the following error occurred, ```error: compilation failed: error: could not connect to remote repository to find versions for: ballerina/io. reason: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed```, add a ***Ballerina Central access token*** to your Ballerina settings as mentioned at the start of this document.
+
+After having build the Ballerina Package/Project, you can run it as follows:
+
+```
+$ ls -la
+helloWorldService
+$ bal run helloWorldService
+```
 
 ## 500 - Modifying a Ballerina Module
 
