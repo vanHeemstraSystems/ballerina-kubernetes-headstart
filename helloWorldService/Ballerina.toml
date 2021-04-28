@@ -1,0 +1,7 @@
+[package]
+org = "cloud_user"
+name = "helloWorldService"
+version = "0.1.0"
+
+[build-options]
+observabilityIncluded = true
