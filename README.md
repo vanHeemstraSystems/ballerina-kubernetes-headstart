@@ -218,7 +218,8 @@ We thank you for helping make us better dancers.
 If the above happens, check the content of the generated log file:
 
 ```
-$ cd helloWorldService
+$ pwd
+helloWorldService
 $ ls -la
 ...
 ballerina-internal.log
