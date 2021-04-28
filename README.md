@@ -23,7 +23,7 @@ Create a new ***Ballerina package/project***, including a library package, as fo
 $ bal new helloWorldService --template lib
 Created new Ballerina package 'helloWorldService' at helloWorldService.
 $ ls -la
-helloWOrldService
+helloWorldService
 $ cd helloWorldService
 $ ls -la
 Ballerina.toml
@@ -103,12 +103,13 @@ Create a new ***Ballerina module*** inside the package.
 ```
 $ cd helloWorldService
 $ bal add helloWorld
-Added new bal module at 'modules/helloWorld'
+Added new ballerina module at 'modules/helloWorld'
 $ ls -la
 Ballerina.toml
-Package.md
-main.bal
+.gitignore
+helloWorldService.bal
 modules
+Package.md
 $ cd modules
 $ ls -la 
 helloWorld
@@ -125,8 +126,9 @@ In sum, the Ballerina Package/Project directory structure is now as follows:
 ```
  helloWorldService
  ├── Ballerina.toml
+ ├── .gitignore
+ ├── helloWorldService.bal
  ├── Package.md
- ├── main.bal
  └── modules
      └── helloWorld
          └── helloWorld.bal
