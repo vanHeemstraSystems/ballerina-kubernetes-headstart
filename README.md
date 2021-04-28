@@ -204,15 +204,11 @@ http:ListenerConfiguration helloWorldEPConfig = {
 
 listener http:Listener helloWorldEP = new (9095, helloWorldEPConfig);
 
-@http:ServiceConfig {
-    basePath: "/helloWorld"
-}
-
-service<http:Service> helloWorld bind helloWorldEP {
-    sayHello(endpoint outboundEP, http:Request request) {
-    http:Response response = new;
-    response.setTextPayload("Hello World !\n");
-    _ = outboundEP->respond(response);
+service /helloWorld on helloWorldEP {
+    resource function get .(endpoint outboundEP, http:Request request) {
+        http:Response response = new;
+        response.setTextPayload("Hello World !\n");
+        _ = outboundEP->respond(response);
     }
 }
 ```
