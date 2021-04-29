@@ -255,7 +255,25 @@ Success!
 
 Now check the outcome as follows:
 
-```... more ...```
+```
+$ cd helloWorldService
+$ bal run helloWorldService.bal
+ballerina: The source file 'helloWorldService.bal' belongs to a Ballerina package.
+
+USAGE:
+    bal run [--experimental] [--offline] [--taint-check]
+                  [<executable-jar | ballerina-file | package-path>] [-- program-args...]
+```
+
+```
+$ cd modules/helloWorld
+$ bal run helloWorld.bal
+ballerina: The source file 'helloWorld.bal' belongs to a Ballerina package.
+
+USAGE:
+    bal run [--experimental] [--offline] [--taint-check]
+                  [<executable-jar | ballerina-file | package-path>] [-- program-args...]
+```
 
 ## 500 - Modifying a Ballerina Module
 
