@@ -227,8 +227,28 @@ ballerina-internal.log
 $ vi ballerine-internal.log
 ```
 
+If it states something along the lines of "***File*** 'helloWorldService/target/cache/cloud_user/helloWorldService/0.1.0/java11/helloWorldService.helloWorld.jar' ***cannot be written to***", temporarily disable SELinux, as described here https://www.cyberciti.biz/faq/disable-selinux-on-centos-7-rhel-7-fedora-linux/
 
+In short do the following:
 
+1) Check the current SELinux status, run: ```$ sestatus```
+2) To disable SELinux on CentOS 7 temporarily, run: ```$ sudo setenforce 0```
+3) Edit the ```/etc/selinux/config``` file and set the SELINUX to ```disabled```
+
+```SELINUX=``` can take one of these three values:
+
+- ```enforcing``` – SELinux security policy is enforced.
+- ```permissive``` – SELinux prints warnings instead of enforcing (disabled).
+- ```disabled``` – No SELinux policy is loaded (disabled).
+
+```SELINUXTYPE=``` can take one of following:
+
+- ```targeted``` – Targeted processes are protected.
+- ```minimum``` – Modification of targeted policy. Only selected processes are protected.
+- ```mls``` – Multi Level Security protection.
+
+5) Reboot the Linux server ```$ sudo reboot```
+6) Verify it by running the ```$ sestatus``` and ```$ sudo getenforce``` again
 
 ## 500 - Modifying a Ballerina Module
 
