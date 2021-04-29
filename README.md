@@ -89,6 +89,14 @@ $ vi .gitignore
 target
 ```
 
+Add the following line to .gitignore to prevent logs from being pushed to the repository.
+
+```
+target
+ballerina-internal.log
+```
+helloWorldService/.gitignore
+
 The content of helloWorldService.bal is as follows:
 
 ```
