@@ -229,6 +229,18 @@ $ vi ballerine-internal.log
 
 If it states something along the lines of "***File*** 'helloWorldService/target/cache/cloud_user/helloWorldService/0.1.0/java11/helloWorldService.helloWorld.jar' ***cannot be written to***" remove ballerina-internal.log and remove the ```helloWorldService/target``` directory with all of its content: ```$ sudo rm -r target```. The try building again.
 
+
+```
+$ ls -la
+helloWorldService
+$ bal run helloWorldService
+Compiling source
+        cloud_user/helloWorldService:0.1.0
+
+Running executable
+
+```
+
 ## 500 - Modifying a Ballerina Module
 
 More ....
