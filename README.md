@@ -32,6 +32,15 @@ ballerina/ftp:1.1.0-alpha9 [central.ballerina.io -> home repo]  100% [==========
 ballerina/ftp:1.1.0-alpha9 pulled from central successfully
 ```
 
+Prepare the files in the ***root directory of this repository*** as follows:
+
+Add the following line to .gitignore to prevent logs from being pushed to the repository.
+
+```
+ballerina-internal.log
+```
+.gitignore
+
 Create a new ***Ballerina package/project***, including a library package, as follows (or clone the repository with the pre-made directory structure and files).
 
 ```
@@ -88,14 +97,6 @@ The content of .gitignore is as follows:
 $ vi .gitignore
 target
 ```
-
-Add the following line to .gitignore to prevent logs from being pushed to the repository.
-
-```
-target
-ballerina-internal.log
-```
-helloWorldService/.gitignore
 
 The content of helloWorldService.bal is as follows:
 
