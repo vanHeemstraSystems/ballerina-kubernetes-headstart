@@ -235,7 +235,7 @@ $ ls -la
 ...
 ballerina-internal.log
 ...
-$ vi ballerine-internal.log
+$ vi ballerina-internal.log
 ```
 
 If it states something along the lines of "***File*** 'helloWorldService/target/cache/cloud_user/helloWorldService/0.1.0/java11/helloWorldService.helloWorld.jar' ***cannot be written to***" remove ballerina-internal.log and remove the ```helloWorldService/target``` directory with all of its content: ```$ sudo rm -r target```. The try running it again.
