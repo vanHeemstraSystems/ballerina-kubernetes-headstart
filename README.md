@@ -181,7 +181,7 @@ $ echo $BALLERINA_HOME
 
 ## 400 - Building a Ballerina Package/Project (including the modules)
 
-Starting outside the Ballerina Package/Project directory
+Starting outside the Ballerina Package/Project directory, ***build*** the Ballerina Package/Project (including the modules) as follows:
 
 ```
 $ ls -la  
@@ -196,7 +196,9 @@ Generating executable
 
 ***Note***: In case the following error occurred, ```error: compilation failed: error: could not connect to remote repository to find versions for: ballerina/io. reason: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed```, add a ***Ballerina Central access token*** to your Ballerina settings as mentioned at the start of this document.
 
-After having build the Ballerina Package/Project, you can run it as follows:
+## 500 - Running a Ballerina Package/Project (including the modules)
+
+After having build the Ballerina Package/Project, starting outside the Ballerina Package/Project, you can ***run*** the Ballerina Package/Project (including the modules) as follows:
 
 ```
 $ ls -la
@@ -227,8 +229,7 @@ ballerina-internal.log
 $ vi ballerine-internal.log
 ```
 
-If it states something along the lines of "***File*** 'helloWorldService/target/cache/cloud_user/helloWorldService/0.1.0/java11/helloWorldService.helloWorld.jar' ***cannot be written to***" remove ballerina-internal.log and remove the ```helloWorldService/target``` directory with all of its content: ```$ sudo rm -r target```. The try building again.
-
+If it states something along the lines of "***File*** 'helloWorldService/target/cache/cloud_user/helloWorldService/0.1.0/java11/helloWorldService.helloWorld.jar' ***cannot be written to***" remove ballerina-internal.log and remove the ```helloWorldService/target``` directory with all of its content: ```$ sudo rm -r target```. The try running it again.
 
 ```
 $ ls -la
@@ -240,6 +241,12 @@ Compiling source
 Running executable
 
 ```
+
+Success!
+
+Now check the outcome as follows:
+
+```... more ...```
 
 ## 500 - Modifying a Ballerina Module
 
